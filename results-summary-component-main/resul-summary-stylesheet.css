@@ -1,0 +1,228 @@
+html {
+  background-color: white;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  position: relative;
+  top: 3px;
+  width: 18px;
+  margin-right: 5px;
+}
+
+.summary-score {
+  color: black;
+  margin-right: 5px;
+}
+
+/* containers */
+
+.wrapper,
+.score-board,
+.attributes {
+  border-radius: 20px;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin: 0;
+  box-shadow: 5px 5px 20px rgba(17, 37, 212, 0.2);
+}
+
+.score-board {
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  display: inline-block;
+  text-align: center;
+  height: 450px;
+  width: 350px;
+}
+
+.attributes {
+  background-color: #fff;
+  display: inline-block;
+  margin: 15px 25px;
+  width: 290px;
+}
+
+/* Score Board */
+
+.score-board p,
+.score-board h3 {
+  color: rgb(155, 155, 155);
+}
+
+.score-board h3 {
+  padding: 10px 0;
+}
+
+.score-board h1,
+.score-board h2 {
+  color: #fff;
+}
+
+.score {
+  background: linear-gradient(to bottom, #4e21ca, hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  height: 180px;
+  width: 180px;
+  margin: auto;
+}
+
+.score-board h1 {
+  font-size: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 45px 0 0 0;
+}
+
+.out-of {
+  margin: 0;
+}
+
+.score-board h2 {
+  padding: 10px 0 0;
+  margin: 19px 0 15px;
+}
+
+.message {
+  text-align: center;
+  width: 72%;
+  margin: auto;
+}
+
+/* Summary */
+
+.attributes p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.attribute-score {
+  margin: 0 0 20px 0;
+  padding: 12px 10px;
+  border-radius: 10px;
+}
+
+.out-of-span {
+  color: rgb(155, 155, 155);
+}
+
+/* Reaction */
+
+.reaction-span {
+  display: inline-block;
+  margin-right: 105px;
+}
+
+.reaction {
+  background-color: rgba(255, 87, 87, 0.2);
+  color: rgba(255, 87, 87);
+}
+
+/* Memory */
+
+.memory-span {
+  display: inline-block;
+  margin-right: 110px;
+}
+
+.memory {
+  background-color: rgba(255, 176, 31, 0.2);
+  color: rgba(255, 176, 31);
+}
+
+/* Verbal */
+
+.verbal-span {
+  display: inline-block;
+  margin-right: 124px;
+}
+
+.verbal {
+  background-color: rgba(0, 189, 145, 0.2);
+  color: rgba(0, 189, 145);
+}
+
+/* Visual */
+
+.visual-span {
+  display: inline-block;
+  margin-right: 128px;
+}
+
+.visual {
+  background-color: rgba(17, 37, 212, 0.2);
+  color: rgba(17, 37, 212);
+}
+
+/* Button */
+
+.continue-btn {
+  display: inline-block;
+  background: linear-gradient(#7857ff, #2e2be9);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+  padding: 13px 0;
+  margin-top: 18px;
+}
+
+/* Mobile Version */
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: fit-content;
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%);
+  }
+
+  .score-board {
+    display: inline-block;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0;
+    height: 430px;
+  }
+
+  .message {
+    width: 85%;
+  }
+
+  .attributes {
+    display: inline-block;
+    height: 405px;
+  }
+}
+
+/* signature */
+
+.signature {
+  position: absolute;
+  top: 900px;
+}
